@@ -25,14 +25,16 @@ public class Matrix {
     }
 
     //TODO: complete this method to print out a row
-    public String getRow(int row) {
+    public String getRow(int row) { int len =6;
+    int start= (row-1)*len;
+    int end = row*len-1;
 
-        return "";
+        return letters.substring(start,end);
     }
 
     //TODO: complete this method to print out a left diagonal
     public String getLeftDiagonal(String row1, String row2, String row3) {
-        return "";
+        return row1.charAt(0)+" ";
     }
     
     //TODO: complete this method to print out a right diagonal

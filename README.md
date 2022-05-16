@@ -26,7 +26,7 @@ c ​ = ​ c ​ + 1​
 Please note your answer below.
 
 ```
-Your answers here.
+a=1 b=9 c=10
 ```
 2. After the following statements are executed, what are the outputs? The method **setFruitName(String)** changes the fruit name and the method ​ **getFruitName()** returns the fruit name of the object.
 
@@ -46,7 +46,12 @@ System​.out​.println​("The fruit is "​ + greenApple​.getFruitName​()
 Please note your answer below.
 
 ```
-Your answers here.
+The fruit is red apple
+The fruit is orange
+The fruit is red apple
+The fruit is red apple
+The fruit is navel orange
+The fruit is green apple
 ```
 
 
