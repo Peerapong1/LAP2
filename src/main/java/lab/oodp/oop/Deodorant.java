@@ -19,42 +19,45 @@ public class Deodorant {
         return info;
     }
 
-  
+
     //TODO: implement this
     public double getPrice() {
         return price;
     }
-    
+
   //TODO: implement this
     public String getBrand() {
-        return "";
+        return brand;
     }
-    
-    
+
+
     //TODO: implement this
     public String getFragrance() {
-        return "";
+        return fragrance;
     }
-    
+
     //TODO: implement this
     public void setPrice(double price) {
-        this.price = 0;
+        this.price = price;
     }
 
     //TODO: implement this
     public void setBrand(String brand) {
-        this.brand = "";
+        this.brand = brand;
     }
-    
+
     //TODO: implement this
     public void setFragrance(String fragrance) {
-        this.fragrance = "";
+        this.fragrance = fragrance;
     }
-    
+
   //TODO: implement this
     public boolean isMoreExpensiveThan(Deodorant other) {
-        return false;
+        if(this.price > other.getPrice()) {
+        return true;
     }
-    
-    
+        else {
+            return false;
+        }
+    }
 }

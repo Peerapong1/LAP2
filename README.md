@@ -26,7 +26,7 @@ c ​ = ​ c ​ + 1​
 Please note your answer below.
 
 ```
-a=1 b=9 c=10
+1 9 10
 ```
 2. After the following statements are executed, what are the outputs? The method **setFruitName(String)** changes the fruit name and the method ​ **getFruitName()** returns the fruit name of the object.
 
@@ -46,12 +46,39 @@ System​.out​.println​("The fruit is "​ + greenApple​.getFruitName​()
 Please note your answer below.
 
 ```
-The fruit is red apple
-The fruit is orange
-The fruit is red apple
-The fruit is red apple
-The fruit is navel orange
-The fruit is green apple
+package lab.oodp.oop;
+
+public class FruitName {
+private String fruitName;
+public FruitName(String name) {
+fruitName = name;
+ }
+
+public String getFruitName() {
+return fruitName;
+}
+
+public void setFruitName(String fruitName) {
+this.fruitName = fruitName;
+}
+
+
+public static void main(String[] args) {
+
+       FruitName apple = new FruitName("red apple");
+       FruitName orange = new FruitName("orange");
+       FruitName greenapple = apple;
+       System.out.println("The fruit is" + apple.getFruitName());
+       System.out.println("The fruit is" + orange.getFruitName());
+       System.out.println("The fruit is" + greenapple.getFruitName());
+       orange.setFruitName("navel orange");
+       greenapple.setFruitName("green Apple");
+       System.out.println("The fruit is" + apple.getFruitName());
+       System.out.println("The fruit is" + orange.getFruitName());
+       System.out.println("The fruit is" + greenapple.getFruitName());
+}
+
+}
 ```
 
 
